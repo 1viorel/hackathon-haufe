@@ -7,9 +7,19 @@
 
 .text-spacer {
   padding: 20px;
+  margin-left: 10px;
 }
 
 .logo {
   font-weight: bold;
   font-size: 36px;
 }
+
+.oval-bubble {
+  background-color: #3B444B; /* Background color */
+  color: #fff; /* Text color */
+  border-radius: 40px;
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+

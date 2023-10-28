@@ -17,6 +17,7 @@ export class FormComponent {
     this.formService.submitAddress(this.formData.address).subscribe(
       (response: any) => {
         console.log('Address data submitted successfully:', response);
+        console.log(this.formData.address);
       },
       (error: any) => {
         console.error('Error submitting address data:', error);
