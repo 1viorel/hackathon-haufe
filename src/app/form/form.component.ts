@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormService } from '../form.service'; // Import your FormService
 
 @Component({
   selector: 'app-form',
@@ -7,12 +8,19 @@ import { Component } from '@angular/core';
 })
 export class FormComponent {
   formData = {
-    adress: '',
+    address: '', // Make sure the property name matches what your backend expects
   };
 
-  onSubmit() {
+  constructor(private formService: FormService) {}
 
-    console.log('Form data:', this.formData);
+  onSubmit() {
+    this.formService.submitAddress(this.formData.address).subscribe(
+      (response: any) => {
+        console.log('Address data submitted successfully:', response);
+      },
+      (error: any) => {
+        console.error('Error submitting address data:', error);
+      }
+    );
   }
 }
-

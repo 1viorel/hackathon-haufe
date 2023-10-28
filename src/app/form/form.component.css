@@ -19,5 +19,21 @@ button {
   width: 100%;
 }
 
-/* You can add more styling as needed */
+.example-form {
+  background: url(https://media.wired.com/photos/59269cd37034dc5f91bec0f1/191:100/w_1280,c_limit/GoogleMapTA.jpg) no-repeat center center fixed;
+  background-size: cover;
+  /* Other form styling goes here */
+}
+
+/* Adjust form element styles as needed */
+.mat-form-field {
+  margin: 10px;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+
 

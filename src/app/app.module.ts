@@ -19,6 +19,7 @@ import {MatIcon, MatIconModule} from '@angular/material/icon';
 import { FormComponent } from './form/form.component';
 import { MatFormFieldModule} from "@angular/material/form-field";
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     MatFormFieldModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
