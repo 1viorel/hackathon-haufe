@@ -7,6 +7,19 @@ import { TutorialComponent } from './tutorial/tutorial.component';
 import { RuleComponent } from './rule/rule.component';
 import { MapComponent } from './map/map.component';
 import { FooterComponent } from './footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { AppRoutingModule } from './app-routing.module';
+import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
+import { DefaultPageComponent } from './default-page/default-page.component';
+import {MatCardModule} from "@angular/material/card";
+import { ScooterListComponent } from './scooter-list/scooter-list.component';
+import {MatIcon, MatIconModule} from '@angular/material/icon';
+import { FormComponent } from './form/form.component';
+import { MatFormFieldModule} from "@angular/material/form-field";
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -15,10 +28,22 @@ import { FooterComponent } from './footer/footer.component';
     TutorialComponent,
     RuleComponent,
     MapComponent,
-    FooterComponent
+    FooterComponent,
+    CheckoutPageComponent,
+    DefaultPageComponent,
+    ScooterListComponent,
+    FormComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatButtonModule,
+    AppRoutingModule,
+    MatCardModule,
+    MatIconModule,
+    MatFormFieldModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

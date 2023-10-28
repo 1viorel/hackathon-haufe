@@ -1,1 +1,36 @@
 
+.info-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.safety-rule {
+  display: flex;
+  align-items: flex-start;
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.rule-number {
+  background-color: #8A4FFF;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+.rule-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+

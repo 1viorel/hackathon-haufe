@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-map',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./map.component.css']
 })
 export class MapComponent {
+  constructor(private router: Router) { }
+
+  navigateToTargetPage() {
+    this.router.navigate(['/checkout']);
+  }
 
 }

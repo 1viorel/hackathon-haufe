@@ -15,7 +15,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: greenyellow;
+  background: #3B444B;
   border-radius: 15px;
 }
 
@@ -71,6 +71,18 @@ body {
   height: 25%;
 }
 
+.bubble2::after {
+  content: '';
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  top: 1;
+  z-index: -1;
+  width: 100%;
+  background-color: #EFFFFA;
+  height: 25%;
+}
+
 /*
 $default_border_radius: 7px;
 $white: #FFFFFF;
@@ -80,3 +92,6 @@ $cool-black: #3B444B;
 $peri: #C3BEF7;
 $purple: #8A4FFF;
 */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
