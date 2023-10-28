@@ -1,0 +1,15 @@
+.container-horizontal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-spacer {
+  padding: 20px;
+}
+
+.footer {
+  height: 400px;
+  background-color: #EFFFFA;
+}

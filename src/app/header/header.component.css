@@ -1,0 +1,14 @@
+.container-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text-spacer {
+  padding: 20px;
+}
+
+.logo {
+  font-family: 'Pacifico', fantasy;
+  font-size: 36px;
+}
